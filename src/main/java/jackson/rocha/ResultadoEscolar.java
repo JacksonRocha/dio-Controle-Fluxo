@@ -3,16 +3,10 @@ package jackson.rocha;
 public class ResultadoEscolar {
 
     public static void main(String[] args) {
-        int nota = 10;
+        int nota = 7;
 
-        if (nota >= 7) {
-            System.out.println("Aprovado");
+        String resultado = nota >= 7 ? "Aprovado" : "Reprovado";
 
-        } else if (nota >= 5 && nota < 7) {
-            System.out.println("Prova Recuperação");
-
-        } else {
-            System.out.println("Reprovado");
-        }
+        System.out.println(resultado);
     }
 }
